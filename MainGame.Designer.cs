@@ -11,6 +11,10 @@
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// 
+
+        //https://www.phrases.com/phrases_api.php
+
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -29,6 +33,8 @@
         private void InitializeComponent()
         {
             this.lblDifficulty = new System.Windows.Forms.Label();
+            this.lblQuote = new System.Windows.Forms.Label();
+            this.lblAuthor = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblDifficulty
@@ -40,11 +46,31 @@
             this.lblDifficulty.TabIndex = 0;
             this.lblDifficulty.Text = "Difficulty: ";
             // 
+            // lblQuote
+            // 
+            this.lblQuote.AutoSize = true;
+            this.lblQuote.Location = new System.Drawing.Point(115, 602);
+            this.lblQuote.Name = "lblQuote";
+            this.lblQuote.Size = new System.Drawing.Size(82, 25);
+            this.lblQuote.TabIndex = 1;
+            this.lblQuote.Text = "Quote: ";
+            // 
+            // lblAuthor
+            // 
+            this.lblAuthor.AutoSize = true;
+            this.lblAuthor.Location = new System.Drawing.Point(115, 669);
+            this.lblAuthor.Name = "lblAuthor";
+            this.lblAuthor.Size = new System.Drawing.Size(87, 25);
+            this.lblAuthor.TabIndex = 2;
+            this.lblAuthor.Text = "Author: ";
+            // 
             // MainGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1174, 1129);
+            this.Controls.Add(this.lblAuthor);
+            this.Controls.Add(this.lblQuote);
             this.Controls.Add(this.lblDifficulty);
             this.Name = "MainGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -59,5 +85,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblDifficulty;
+        private System.Windows.Forms.Label lblQuote;
+        private System.Windows.Forms.Label lblAuthor;
     }
 }

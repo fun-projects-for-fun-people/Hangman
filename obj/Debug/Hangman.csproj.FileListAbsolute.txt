@@ -10,3 +10,8 @@ C:\Users\brian\source\repos\Hangman\Hangman\obj\Debug\Hangman.exe
 C:\Users\brian\source\repos\Hangman\Hangman\obj\Debug\Hangman.pdb
 C:\Users\brian\source\repos\Hangman\Hangman\obj\Debug\Hangman.SplashForm.resources
 C:\Users\brian\source\repos\Hangman\Hangman\obj\Debug\Hangman.MainGame.resources
+C:\Users\brian\source\repos\Hangman\Hangman\bin\Debug\Newtonsoft.Json.dll
+C:\Users\brian\source\repos\Hangman\Hangman\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\brian\source\repos\Hangman\Hangman\bin\Debug\Newtonsoft.Json.xml
+C:\Users\brian\source\repos\Hangman\Hangman\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\brian\source\repos\Hangman\Hangman\obj\Debug\Hangman.csproj.CopyComplete

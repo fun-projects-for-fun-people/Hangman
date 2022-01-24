@@ -12,10 +12,21 @@ namespace Hangman
 {
     public partial class MainGame : Form
     {
+
+        //http://quotes.stormconsultancy.co.uk/api   A hand picked selection of quotes from the field of computer science.
+
         private int difficultyLvl = -1;
         public MainGame()
         {
             InitializeComponent();
+            ApiClass.InitializeClient();
+        }
+
+        private async Task GetNewPhrase()
+        {
+            var quote = await GetPhrase.LoadPhrase();
+            lblQuote.Text += quote.quote;
+            lblAuthor.Text += quote.author;
         }
 
         private void MainGame_Load(object sender, EventArgs e)
@@ -41,7 +52,11 @@ namespace Hangman
                     break;
 
             }
+
+            GetNewPhrase();
+
         }
+
 
         private void MainGame_FormClosing(object sender, FormClosingEventArgs e)
         {
